@@ -41,6 +41,7 @@ def upload_location(instance, filename):
     """
     return "%s/%s" %(new_id, filename)
 
+
 class Post(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, default=1)
     title = models.CharField(max_length=120)
